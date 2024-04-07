@@ -75,12 +75,11 @@ body {
   justify-content: center;
   overflow: hidden;
   z-index: 1;
-  padding-top: 45px;
 }
 
 .main-section__block {
   position: relative;
-  max-width: 1440px;
+  max-width: 1400px;
   width: 100%;
   /* padding: 100px 0 0 41px; */
   padding: 0 0 0 41px;
@@ -183,11 +182,23 @@ body {
   .header {
     padding: 0 2% 0 2%;
   }
+  .header-block{
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
   .section {
     overflow: auto;
   }
   .main-section__block {
     padding: 0 3% 0 2%;
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
   }
 }
 
@@ -196,11 +207,24 @@ body {
     padding: 0 4% 0 4%;
     height: 75px;
   }
+  .header-block {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
   .main-section {
     padding-bottom: 120px;
+    padding-top: 85px;
   }
   .main-section__block {
     padding: 0 5% 0 4%;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
   .logo-block {
     width: 35px;

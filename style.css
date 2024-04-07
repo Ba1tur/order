@@ -31,7 +31,7 @@ body {
 }
 
 .header-block {
-  max-width: 1400px;
+  max-width: 1300px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -79,7 +79,7 @@ body {
 
 .main-section__block {
   position: relative;
-  max-width: 1400px;
+  max-width: 1300px;
   width: 100%;
   /* padding: 100px 0 0 41px; */
   -moz-transform: scale(0.8, 0.8);
@@ -144,7 +144,7 @@ body {
   object-fit: cover;
   position: absolute;
   top: -180px;
-  right: -170px;
+  right: -110px;
   z-index: -1;
   -webkit-user-select: none;
   -khtml-user-select: none;

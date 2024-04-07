@@ -16,11 +16,10 @@ body {
   );
 }
 
-.section{
+.section {
   height: 100vh;
   overflow: hidden;
 }
-
 
 .header {
   width: 100%;
@@ -28,11 +27,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-	background: #fff;
-  
+  background: #fff;
 }
 
-.header-block{
+.header-block {
   max-width: 1440px;
   width: 100%;
   height: 100px;
@@ -74,11 +72,10 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: hidden;
   z-index: 1;
-  
+  padding-top: 90px;
 }
 
 .main-section__block {
@@ -137,21 +134,24 @@ body {
   cursor: pointer;
 }
 
-.main-btn:hover{
+.main-btn:hover {
   border: 2px solid #cce251;
   background: none;
   color: #cce251;
 }
-
 
 .possible {
   width: 888px;
   height: 898px;
   object-fit: cover;
   position: absolute;
-  top: -330px;
+  top: -280px;
   right: -190px;
   z-index: -1;
+}
+
+.possible-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 1470px) {
@@ -162,7 +162,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .possible {
-    top: -330px;
+    top: -240px;
     right: -190px;
   }
 }
@@ -172,14 +172,14 @@ body {
     width: 600px;
     height: 600px;
     top: auto;
-    bottom: -80px;
-    right: -120px;
+    bottom: -20px;
+    right: -100px;
     filter: blur(5px);
   }
   .header {
     padding: 0 2% 0 2%;
   }
-  .section{
+  .section {
     overflow: auto;
   }
   .main-section__block {
@@ -192,11 +192,23 @@ body {
     padding: 0 4% 0 4%;
     height: 75px;
   }
-	.main-section{
-		padding-bottom: 120px;
-	}
+  /* .header-block {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  } */
+  .main-section {
+    padding-bottom: 120px;
+  }
   .main-section__block {
-    padding: 100px 5% 0 4%;
+    padding: 0 5% 0 4%;
+    /* -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); */
   }
   .logo-block {
     width: 35px;
@@ -207,10 +219,14 @@ body {
     padding-left: 20px;
   }
   .possible {
-    width: 450px;
-    height: 450px;
-    bottom: -260px;
+    display: none;
+  }
+  .possible-mobile {
+    display: block;
+    position: absolute;
+    bottom: -100px;
     right: -50px;
+    z-index: -1;
   }
   .main-title {
     font-size: 40px;
